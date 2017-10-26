@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import CountReducer from './count-reducer';
+import DaliReducer from './dali-reducer';
 
 const rootReducer = combineReducers({
-  count: CountReducer,
+  dali: DaliReducer,
 });
 
 export default rootReducer;
