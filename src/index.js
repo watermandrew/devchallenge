@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 
@@ -11,7 +12,7 @@ import './style.scss';
 
 
 const store = createStore(reducers, {}, compose(
-  applyMiddleware(),
+  applyMiddleware(thunk),
   window.devToolsExtension ? window.devToolsExtension() : f => f,
 ));
 
