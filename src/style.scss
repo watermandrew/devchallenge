@@ -1,7 +1,14 @@
 body {
-  background: darken(white, 0.2);
+  background: url(http://earthguide.ucsd.edu/eoc/teachers/t_tectonics/images/GLOBALeb10colshade.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .active {
   color: blue;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
 }

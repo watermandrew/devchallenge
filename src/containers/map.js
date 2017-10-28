@@ -22,17 +22,14 @@ class Map extends Component {
 
   render() {
     return (
-      <div>
-        <p> This is my map </p>
-        <div>
-          {
+      <div id="mainDiv">
+        {
             this.props.members.map((item) => {
               return (
                 <Person member={item} />
               );
             })
           }
-        </div>
       </div>
     );
   }
