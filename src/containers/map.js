@@ -14,6 +14,7 @@ class Map extends Component {
     };
   }
 
+  // fetch json objects and update state
   componentWillMount() {
     this.props.getDaliMembers();
 
@@ -23,10 +24,12 @@ class Map extends Component {
   render() {
     return (
       <div id="mainDiv">
+        <h2>Click on the dots to be transported to new dimesions! </h2>
         {
+            // create a new person object for each item in the list
             this.props.members.map((item) => {
               return (
-                <Person member={item} />
+                <Person member={item} key={item.url} />
               );
             })
           }
